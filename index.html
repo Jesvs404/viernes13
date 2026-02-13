@@ -1,161 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Viernes 13 ❤️</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    :root{
-      /* ===== EDITA AQUÍ (colores opcionales) ===== */
-      --bg1:#3b1b2c;
-      --bg2:#1d1a2f;
-      --card:#2a2030cc;      /* tarjeta semi-transparente */
-      --border:#ffffff30;
-      --text:#f3f3f3;
-      --muted:#d7d7d7;
-      --gold:#f1c56a;
-      --pink:#ff5aa5;
-    }
+<title>Feliz viernes</title>
 
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color:var(--text);
-      background: radial-gradient(1200px 600px at 30% 20%, #ffffff10, transparent 55%),
-                  linear-gradient(135deg, var(--bg1), var(--bg2));
-      padding:24px;
-    }
+<style>
 
-    .wrap{
-      width:min(720px, 100%);
-    }
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg,#2a1a2f,#0f0b2a);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
 
-    .card{
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius:22px;
-      padding:26px 22px 22px;
-      box-shadow: 0 18px 60px #00000055;
-      position:relative;
-      overflow:hidden;
-    }
+.card{
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    border-radius:25px;
+    padding:40px;
+    max-width:650px;
+    text-align:center;
+    box-shadow:0 0 30px rgba(0,0,0,0.4);
+}
 
-    .card:before{
-      content:"";
-      position:absolute;
-      inset:-2px;
-      border-radius:22px;
-      background: linear-gradient(180deg, #ffffff22, transparent 35%, transparent 70%, #ffffff12);
-      pointer-events:none;
-    }
+h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
 
-    h1{
-      margin:0 0 10px;
-      text-align:center;
-      font-weight:800;
-      font-size: clamp(28px, 5vw, 44px);
-      letter-spacing:.2px;
-    }
+.sub{
+    color:#ffcc66;
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:25px;
+}
 
-    .sub{
-      text-align:center;
-      margin:0 0 18px;
-      color:var(--gold);
-      font-weight:800;
-      font-size: clamp(16px, 2.8vw, 26px);
-      letter-spacing: 2px;
-      text-transform:none;
-    }
+.imgBox img{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.6);
+}
 
-    .imgBox{
-      margin: 8px auto 16px;
-      width: min(520px, 100%);
-      background:#ffffff;
-      border-radius: 16px;
-      padding: 10px;
-      border: 1px solid #00000022;
-      box-shadow: 0 10px 30px #00000033;
-    }
-    .imgBox img{
-      width:100%;
-      height:auto;
-      display:block;
-      border-radius: 10px;
-    }
+.msg{
+    margin-top:25px;
+    font-size:18px;
+    line-height:1.6;
+}
 
-    .msg{
-      margin: 0 auto 14px;
-      max-width: 620px;
-      text-align:center;
-      color:var(--muted);
-      font-size: clamp(15px, 2.2vw, 20px);
-      line-height: 1.55;
-    }
+.love{
+    margin-top:20px;
+    font-size:24px;
+    color:#ff4da6;
+    font-weight:bold;
+}
 
-    .love{
-      text-align:center;
-      margin: 4px 0 0;
-      font-weight:900;
-      color:var(--pink);
-      font-size: clamp(18px, 3vw, 26px);
-      letter-spacing: .4px;
-    }
-
-    /* Botón opcional para descargar como imagen (solo imprime/guarda) */
-    .actions{
-      display:flex;
-      gap:10px;
-      justify-content:center;
-      margin-top:14px;
-      flex-wrap:wrap;
-    }
-    button{
-      border:1px solid #ffffff30;
-      background:#00000022;
-      color:var(--text);
-      padding:10px 14px;
-      border-radius:12px;
-      cursor:pointer;
-      font-weight:700;
-    }
-    button:hover{ background:#00000033; }
-  </style>
+</style>
 </head>
 
 <body>
-  <main class="wrap">
-    <section class="card">
-      <!-- ===== EDITA AQUÍ (textos) ===== -->
-      <h1>Viernes 13, pero contigo todo da suerte</h1>
-      <p class="sub">Para mi novia hermosa</p>
 
-      <!-- ===== EDITA AQUÍ (tu imagen) =====
-           Opción A: sube una imagen y pon su ruta: "img/tuimagen.jpg"
-           Opción B: pega un link directo: "https://.../imagen.jpg"
-      -->
-      <div class="imgBox">
-        <img src="img/viernes13.png">
-      </div>
+<div class="card">
 
-      <p class="msg">
-        Hoy es viernes 13, pero contigo no existe la mala suerte.
-        Eres mi parte favorita de cada día, mi calma y mi alegría.
-        Gracias por estar a mi lado.
-      </p>
+<h1>Feliz viernes</h1>
 
-      <p class="love">Te amo muchisimo</p>
+<p class="sub">para mi novia hermosa</p>
 
-      <!-- (Opcional) -->
-      <div class="actions">
-        <button onclick="window.print()">Guardar / Imprimir</button>
-      </div>
-    </section>
-  </main>
+<div class="imgBox">
+    <img src="img/felizviernes.png">
+</div>
+
+<p class="msg">
+Si la vida me diera mil oportunidades, siempre volvería a escogerte solo a ti.
+Porque no existe otra persona que pueda ocupar tu lugar en mi corazón.
+</p>
+
+<p class="love">Te amo muchisimo ❤️</p>
+
+</div>
+
 </body>
 </html>
